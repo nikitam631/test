@@ -1,0 +1,2 @@
+select * from @{item().Tabl}  where acc='@{pipeline().parameters.acc}';
+delete from @{item().Tabl}  where acc='@{pipeline().parameters.acc}'
